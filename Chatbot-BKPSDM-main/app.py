@@ -14,9 +14,16 @@ import requests
 
 load_dotenv()
 
+api_key = os.getenv("GEMINI_API_KEY")
+
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 app = Flask(__name__)
+
+if __name__ == "__main__":
+    # Render menggunakan port dari environment variable
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
 # ====================================
