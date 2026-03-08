@@ -14,6 +14,8 @@ import requests
 
 load_dotenv()
 
+api_key = os.getenv("GEMINI_API_KEY")
+
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 app = Flask(__name__)
