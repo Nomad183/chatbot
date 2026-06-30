@@ -1,6 +1,0 @@
-flask
-google-genai
-python-dotenv
-numpy
-requests
-gunicorn
