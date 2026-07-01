@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     %% Aktor
     User((Masyarakat))
